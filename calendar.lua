@@ -33,10 +33,9 @@ local tonumber = tonumber
 local awesome = awesome -- luacheck: ignore
 local awful = require("awful")
 
-
 local calendar
 
-if awesome.version:sub(1, 4) == "v4.2" then
+if awful.widget.calendar_popup then
   calendar = awful.widget.calendar_popup.month({position="tr"})
   function calendar:register(widget)
     self:attach(widget, "tr")
