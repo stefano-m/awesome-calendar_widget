@@ -38,7 +38,6 @@ local calendar
 if awful.widget.calendar_popup then
   calendar = awful.widget.calendar_popup.month({position="tr"})
   function calendar:register(widget)
-    self:attach(widget, "tr")
     widget:connect_signal(
       "mouse::enter",
       function ()
