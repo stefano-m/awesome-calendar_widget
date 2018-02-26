@@ -35,7 +35,7 @@ local calendar = require("calendar")
 
 -- If you cloned the repo as a submodule in
 -- ~/.config/awesome/external/calendar
--- local calendar = require("external.calendar.calendar")
+-- local calendar = require("external.calendar")
 
 -- more configuration here
 
