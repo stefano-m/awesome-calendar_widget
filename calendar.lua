@@ -32,6 +32,7 @@ local tonumber = tonumber
 
 local awesome = awesome -- luacheck: ignore
 local awful = require("awful")
+local naughty = require("naughty")
 
 local calendar
 
@@ -41,6 +42,7 @@ if awful.widget.calendar_popup then
     widget:connect_signal(
       "mouse::enter",
       function ()
+        calendar:call_calendar(0, "tr", awful.screen.focused() )
         self:toggle()
     end)
     widget:connect_signal(
