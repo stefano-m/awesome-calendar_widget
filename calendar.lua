@@ -24,7 +24,8 @@
   If used with Awesome Version < 4.2 it requires the `cal` program from
   `util-linux`, otherwise it will use the nicer awful.widget.calendar_popup
   Remember to `require` the widget **after** `beautiful.init` to ensure that
-  the widget's style matches the theme.  ]]
+   the widget's style matches the theme.  
+  ]]
 
 local os = os
 local string = string
@@ -32,7 +33,6 @@ local tonumber = tonumber
 
 local awesome = awesome -- luacheck: ignore
 local awful = require("awful")
-local naughty = require("naughty")
 
 local calendar
 
