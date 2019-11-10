@@ -3,10 +3,8 @@
 A simple widget that can be attached to the `textclock` to show a monthly
 calendar.
 
-This widget is a simple wrapper around:
-
-- the `cal` utility if you are using **4.0** <= Awesome < **4.2**
-- `awful.widget.calendar_popup` if you are using Awesome >= **4.2**
+This widget is a simple wrapper around `awful.widget.calendar_popup` available
+in Awesome >= **4.2**
 
 Once the widget is attached to the `textclock` (or any other widget really),
 moving the mouse over the `textclock` will show a monthly calendar. The mouse
@@ -18,8 +16,6 @@ is quite quick to load.
 
 # Installation
 
-0. If you are using Awesome **4.x** less than **4.2**, ensure that the `cal`
-   utility from `util-linux` is available.
 1. Copy `calendar.lua` in your `~/.config/awesome/` folder (e.g. by cloning
    this repository)
 3. Restart Awesome (e.g. press `modkey + Control` or run `awesome-client
